@@ -1,0 +1,10 @@
+<iostream>
+<units>
+
+int main() {
+    auto short_distance = 10dm;
+    auto long_distance = 10dam;
+    auto total = short_distance + long_distance;
+    output << total << "\n";
+    output << total.convert(into:dm) << "\n";
+}

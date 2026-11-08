@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "java": {
+      "name": "Java",
+      "extension": ".java",
+      "command": "javac {input}"
+    },
+    "c": {
+      "name": "C",
+      "extension": ".c",
+      "command": "clang {input} -o {output}"
+    },
+    "cpp": {
+      "name": "C++",
+      "extension": ".cpp",
+      "command": "clang++ {input} -o {output}"
+    }
+  }
+}

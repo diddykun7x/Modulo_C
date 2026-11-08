@@ -1,0 +1,28 @@
+// Build the CLI first, then run: ./build/lplay examples/oop_basics.cmod
+<iostream>
+
+class student {
+    // Members in a C++ class are private by default.
+    cstring build_fullname(cstring fn, cstring mn, cstring ln) {
+        return fn + " " + mn + " " + ln;
+    }
+
+public:
+    cstring fn;
+    cstring mn;
+    cstring ln;
+
+    cstring full_name() {
+        return build_fullname(fn, mn, ln);
+    }
+};
+
+int main() {
+    student learner;
+    learner.fn = "Ada";
+    learner.mn = "Augusta";
+    learner.ln = "Lovelace";
+
+    output << learner.full_name() << "\n";
+    return 0;
+}

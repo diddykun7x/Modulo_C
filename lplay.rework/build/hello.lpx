@@ -1,0 +1,34 @@
+// Build the CLI first, then run: ./build/lplay examples/hello.cmod
+<clrnsp>
+<fstream>
+<iostream>
+
+int main() {
+    cstring name;
+    output << "What is your name? ";
+    getline(name); // reads spaces too
+
+    output << clr::cyan << "Hello, " << name << "!" << clr::reset << "\n";
+
+    // Save the greeting, then open the file again and read it back.
+    std::ofstream greeting_file("greeting.txt");
+    if (!greeting_file) {
+        output << "Could not create greeting.txt\n";
+        return 1;
+    }
+    greeting_file << "Hello, " << name << "!\n";
+    greeting_file.close();
+
+    std::ifstream saved_greeting("greeting.txt");
+    std::string greeting_from_file;
+    getline(saved_greeting, greeting_from_file);
+    output << "Read back from greeting.txt: " << greeting_from_file << "\n";
+
+    num count = 3;
+    output << "Counting to " << count << ":\n";
+    for (num i = 1; i <= count; ++i) {
+        output << i << "\n";
+    }
+
+    return 0;
+}

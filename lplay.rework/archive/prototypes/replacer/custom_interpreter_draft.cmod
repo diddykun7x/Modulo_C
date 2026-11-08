@@ -1,0 +1,14 @@
+
+fname("custom interpreter")
+
+<replace>
+<fstream>
+
+replace_i files as replif
+
+int main() {
+    +n file (custfile.txt)
+    replif-ables{
+    replif<"#include i/o" with "#include <iostream>"> in custfile.txt;
+}
+}

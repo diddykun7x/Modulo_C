@@ -1,0 +1,1781 @@
+	.build_version macos, 26, 0	sdk_version 26, 2
+	.section	__TEXT,__text,regular,pure_instructions
+	.globl	_main                           ; -- Begin function main
+	.p2align	2
+_main:                                  ; @main
+Lfunc_begin0:
+	.cfi_startproc
+	.cfi_personality 155, ___gxx_personality_v0
+	.cfi_lsda 16, Lexception0
+; %bb.0:
+	sub	sp, sp, #160
+	stp	x29, x30, [sp, #144]            ; 16-byte Folded Spill
+	add	x29, sp, #144
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	add	x0, sp, #72
+	str	x0, [sp, #48]                   ; 8-byte Folded Spill
+	bl	__ZN7studentC1Ev
+	ldr	x0, [sp, #48]                   ; 8-byte Folded Reload
+Ltmp0:
+	adrp	x1, l_.str@PAGE
+	add	x1, x1, l_.str@PAGEOFF
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc
+Ltmp1:
+	b	LBB0_1
+LBB0_1:
+	add	x8, sp, #72
+	add	x0, x8, #24
+Ltmp2:
+	adrp	x1, l_.str.1@PAGE
+	add	x1, x1, l_.str.1@PAGEOFF
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc
+Ltmp3:
+	b	LBB0_2
+LBB0_2:
+	add	x8, sp, #72
+	add	x0, x8, #48
+Ltmp4:
+	adrp	x1, l_.str.2@PAGE
+	add	x1, x1, l_.str.2@PAGEOFF
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc
+Ltmp5:
+	b	LBB0_3
+LBB0_3:
+Ltmp6:
+	adrp	x0, __ZNSt3__14coutE@GOTPAGE
+	ldr	x0, [x0, __ZNSt3__14coutE@GOTPAGEOFF]
+	add	x1, sp, #72
+	bl	__ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE
+	str	x0, [sp, #40]                   ; 8-byte Folded Spill
+Ltmp7:
+	b	LBB0_4
+LBB0_4:
+Ltmp8:
+	ldr	x0, [sp, #40]                   ; 8-byte Folded Reload
+	adrp	x1, l_.str.3@PAGE
+	add	x1, x1, l_.str.3@PAGEOFF
+	bl	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc
+	str	x0, [sp, #32]                   ; 8-byte Folded Spill
+Ltmp9:
+	b	LBB0_5
+LBB0_5:
+	ldr	x0, [sp, #32]                   ; 8-byte Folded Reload
+	add	x8, sp, #72
+	add	x1, x8, #24
+Ltmp10:
+	bl	__ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE
+	str	x0, [sp, #24]                   ; 8-byte Folded Spill
+Ltmp11:
+	b	LBB0_6
+LBB0_6:
+Ltmp12:
+	ldr	x0, [sp, #24]                   ; 8-byte Folded Reload
+	adrp	x1, l_.str.3@PAGE
+	add	x1, x1, l_.str.3@PAGEOFF
+	bl	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc
+	str	x0, [sp, #16]                   ; 8-byte Folded Spill
+Ltmp13:
+	b	LBB0_7
+LBB0_7:
+	ldr	x0, [sp, #16]                   ; 8-byte Folded Reload
+	add	x8, sp, #72
+	add	x1, x8, #48
+Ltmp14:
+	bl	__ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+Ltmp15:
+	b	LBB0_8
+LBB0_8:
+Ltmp16:
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+	mov	w1, #10                         ; =0xa
+	bl	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_c
+Ltmp17:
+	b	LBB0_9
+LBB0_9:
+	add	x0, sp, #72
+	bl	__ZN7studentD1Ev
+	mov	w0, #0                          ; =0x0
+	ldp	x29, x30, [sp, #144]            ; 16-byte Folded Reload
+	add	sp, sp, #160
+	ret
+LBB0_10:
+Ltmp18:
+	str	x0, [sp, #64]
+	mov	x8, x1
+	str	w8, [sp, #60]
+	add	x0, sp, #72
+	bl	__ZN7studentD1Ev
+	b	LBB0_11
+LBB0_11:
+	ldr	x0, [sp, #64]
+	bl	__Unwind_Resume
+Lfunc_end0:
+	.cfi_endproc
+	.section	__TEXT,__gcc_except_tab
+	.p2align	2, 0x0
+GCC_except_table0:
+Lexception0:
+	.byte	255                             ; @LPStart Encoding = omit
+	.byte	255                             ; @TType Encoding = omit
+	.byte	1                               ; Call site Encoding = uleb128
+	.uleb128 Lcst_end0-Lcst_begin0
+Lcst_begin0:
+	.uleb128 Ltmp0-Lfunc_begin0             ; >> Call Site 1 <<
+	.uleb128 Ltmp17-Ltmp0                   ;   Call between Ltmp0 and Ltmp17
+	.uleb128 Ltmp18-Lfunc_begin0            ;     jumps to Ltmp18
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp17-Lfunc_begin0            ; >> Call Site 2 <<
+	.uleb128 Lfunc_end0-Ltmp17              ;   Call between Ltmp17 and Lfunc_end0
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+Lcst_end0:
+	.p2align	2, 0x0
+                                        ; -- End function
+	.section	__TEXT,__text,regular,pure_instructions
+	.globl	__ZN7studentC1Ev                ; -- Begin function _ZN7studentC1Ev
+	.weak_def_can_be_hidden	__ZN7studentC1Ev
+	.p2align	2
+__ZN7studentC1Ev:                       ; @_ZN7studentC1Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZN7studentC2Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc ; -- Begin function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc
+	.globl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc
+	.weak_definition	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc
+	.p2align	2
+__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc: ; @_ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSB8ne200100EPKc
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	str	x1, [sp]
+	ldr	x0, [sp, #8]
+	ldr	x1, [sp]
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_c ; -- Begin function _ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_c
+	.globl	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_c
+	.weak_definition	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_c
+	.p2align	2
+__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_c: ; @_ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_c
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	mov	x8, x1
+	str	x0, [sp, #8]
+	add	x1, sp, #7
+	strb	w8, [sp, #7]
+	ldr	x0, [sp, #8]
+	mov	x2, #1                          ; =0x1
+	bl	__ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE ; -- Begin function _ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE
+	.globl	__ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE
+	.weak_definition	__ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE
+	.p2align	2
+__ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE: ; @_ZNSt3__1lsB8ne200100IcNS_11char_traitsIcEENS_9allocatorIcEEEERNS_13basic_ostreamIT_T0_EES9_RKNS_12basic_stringIS6_S7_T1_EE
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	str	x1, [sp, #16]
+	ldur	x8, [x29, #-8]
+	str	x8, [sp, #8]                    ; 8-byte Folded Spill
+	ldr	x0, [sp, #16]
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	ldr	x0, [sp, #16]
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4sizeB8ne200100Ev
+	ldr	x1, [sp]                        ; 8-byte Folded Reload
+	mov	x2, x0
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+	bl	__ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc ; -- Begin function _ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc
+	.globl	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc
+	.weak_definition	__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc
+	.p2align	2
+__ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc: ; @_ZNSt3__1lsB8ne200100INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	str	x1, [sp, #16]
+	ldur	x8, [x29, #-8]
+	str	x8, [sp, #8]                    ; 8-byte Folded Spill
+	ldr	x8, [sp, #16]
+	str	x8, [sp]                        ; 8-byte Folded Spill
+	ldr	x0, [sp, #16]
+	bl	__ZNSt3__111char_traitsIcE6lengthB8ne200100EPKc
+	ldr	x1, [sp]                        ; 8-byte Folded Reload
+	mov	x2, x0
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+	bl	__ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.globl	__ZN7studentD1Ev                ; -- Begin function _ZN7studentD1Ev
+	.weak_def_can_be_hidden	__ZN7studentD1Ev
+	.p2align	2
+__ZN7studentD1Ev:                       ; @_ZN7studentD1Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZN7studentD2Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.globl	__ZN7studentC2Ev                ; -- Begin function _ZN7studentC2Ev
+	.weak_def_can_be_hidden	__ZN7studentC2Ev
+	.p2align	2
+__ZN7studentC2Ev:                       ; @_ZN7studentC2Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev
+	ldr	x8, [sp]                        ; 8-byte Folded Reload
+	add	x0, x8, #24
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev
+	ldr	x8, [sp]                        ; 8-byte Folded Reload
+	add	x0, x8, #48
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev ; -- Begin function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev
+	.globl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev
+	.weak_def_can_be_hidden	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev
+	.p2align	2
+__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev: ; @_ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Ev ; -- Begin function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Ev
+	.globl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Ev
+	.weak_def_can_be_hidden	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Ev
+	.p2align	2
+__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Ev: ; @_ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	str	xzr, [x0]
+	str	xzr, [x0, #8]
+	str	xzr, [x0, #16]
+	bl	__ZNSt3__19allocatorIcEC1B8ne200100Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	mov	x1, #0                          ; =0x0
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE14__annotate_newB8ne200100Em
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__19allocatorIcEC1B8ne200100Ev ; -- Begin function _ZNSt3__19allocatorIcEC1B8ne200100Ev
+	.globl	__ZNSt3__19allocatorIcEC1B8ne200100Ev
+	.weak_def_can_be_hidden	__ZNSt3__19allocatorIcEC1B8ne200100Ev
+	.p2align	2
+__ZNSt3__19allocatorIcEC1B8ne200100Ev:  ; @_ZNSt3__19allocatorIcEC1B8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZNSt3__19allocatorIcEC2B8ne200100Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE14__annotate_newB8ne200100Em ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE14__annotate_newB8ne200100Em
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE14__annotate_newB8ne200100Em
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE14__annotate_newB8ne200100Em
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE14__annotate_newB8ne200100Em: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE14__annotate_newB8ne200100Em
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	str	x1, [sp]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__19allocatorIcEC2B8ne200100Ev ; -- Begin function _ZNSt3__19allocatorIcEC2B8ne200100Ev
+	.globl	__ZNSt3__19allocatorIcEC2B8ne200100Ev
+	.weak_def_can_be_hidden	__ZNSt3__19allocatorIcEC2B8ne200100Ev
+	.p2align	2
+__ZNSt3__19allocatorIcEC2B8ne200100Ev:  ; @_ZNSt3__19allocatorIcEC2B8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne200100Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne200100Ev ; -- Begin function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne200100Ev
+	.globl	__ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne200100Ev
+	.weak_def_can_be_hidden	__ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne200100Ev
+	.p2align	2
+__ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne200100Ev: ; @_ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.globl	__ZN7studentD2Ev                ; -- Begin function _ZN7studentD2Ev
+	.weak_def_can_be_hidden	__ZN7studentD2Ev
+	.p2align	2
+__ZN7studentD2Ev:                       ; @_ZN7studentD2Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	str	x8, [sp]                        ; 8-byte Folded Spill
+	add	x0, x8, #48
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+	ldr	x8, [sp]                        ; 8-byte Folded Reload
+	add	x0, x8, #24
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m ; -- Begin function _ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+	.globl	__ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+	.weak_definition	__ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+	.p2align	2
+__ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m: ; @_ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+Lfunc_begin1:
+	.cfi_startproc
+	.cfi_personality 155, ___gxx_personality_v0
+	.cfi_lsda 16, Lexception1
+; %bb.0:
+	sub	sp, sp, #160
+	stp	x29, x30, [sp, #144]            ; 16-byte Folded Spill
+	add	x29, sp, #144
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	stur	x1, [x29, #-16]
+	stur	x2, [x29, #-24]
+	ldur	x1, [x29, #-8]
+Ltmp21:
+	sub	x0, x29, #40
+	bl	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_
+Ltmp22:
+	b	LBB15_1
+LBB15_1:
+Ltmp24:
+	sub	x0, x29, #40
+	bl	__ZNKSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentrycvbB8ne200100Ev
+	str	w0, [sp, #68]                   ; 4-byte Folded Spill
+Ltmp25:
+	b	LBB15_2
+LBB15_2:
+	ldr	w8, [sp, #68]                   ; 4-byte Folded Reload
+	tbz	w8, #0, LBB15_18
+	b	LBB15_3
+LBB15_3:
+	ldur	x1, [x29, #-8]
+	add	x0, sp, #72
+	bl	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC1B8ne200100ERNS_13basic_ostreamIcS2_EE
+	ldur	x8, [x29, #-16]
+	str	x8, [sp, #56]                   ; 8-byte Folded Spill
+	ldur	x8, [x29, #-8]
+	ldr	x9, [x8]
+	ldur	x9, [x9, #-24]
+	add	x0, x8, x9
+Ltmp26:
+	bl	__ZNKSt3__18ios_base5flagsB8ne200100Ev
+	str	w0, [sp, #64]                   ; 4-byte Folded Spill
+Ltmp27:
+	b	LBB15_4
+LBB15_4:
+	ldr	w8, [sp, #64]                   ; 4-byte Folded Reload
+	mov	w9, #176                        ; =0xb0
+	and	w8, w8, w9
+	subs	w8, w8, #32
+	b.ne	LBB15_6
+	b	LBB15_5
+LBB15_5:
+	ldur	x8, [x29, #-16]
+	ldur	x9, [x29, #-24]
+	add	x8, x8, x9
+	str	x8, [sp, #48]                   ; 8-byte Folded Spill
+	b	LBB15_7
+LBB15_6:
+	ldur	x8, [x29, #-16]
+	str	x8, [sp, #48]                   ; 8-byte Folded Spill
+	b	LBB15_7
+LBB15_7:
+	ldr	x8, [sp, #48]                   ; 8-byte Folded Reload
+	str	x8, [sp, #16]                   ; 8-byte Folded Spill
+	ldur	x8, [x29, #-16]
+	ldur	x9, [x29, #-24]
+	add	x8, x8, x9
+	str	x8, [sp, #24]                   ; 8-byte Folded Spill
+	ldur	x8, [x29, #-8]
+	ldr	x9, [x8]
+	ldur	x9, [x9, #-24]
+	add	x8, x8, x9
+	str	x8, [sp, #32]                   ; 8-byte Folded Spill
+	ldur	x8, [x29, #-8]
+	ldr	x9, [x8]
+	ldur	x9, [x9, #-24]
+	add	x0, x8, x9
+Ltmp28:
+	bl	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE4fillB8ne200100Ev
+	str	w0, [sp, #44]                   ; 4-byte Folded Spill
+Ltmp29:
+	b	LBB15_8
+LBB15_8:
+	ldr	w5, [sp, #44]                   ; 4-byte Folded Reload
+	ldr	x4, [sp, #32]                   ; 8-byte Folded Reload
+	ldr	x3, [sp, #24]                   ; 8-byte Folded Reload
+	ldr	x2, [sp, #16]                   ; 8-byte Folded Reload
+	ldr	x1, [sp, #56]                   ; 8-byte Folded Reload
+	ldr	x0, [sp, #72]
+Ltmp30:
+	bl	__ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+Ltmp31:
+	b	LBB15_9
+LBB15_9:
+	ldr	x8, [sp, #8]                    ; 8-byte Folded Reload
+	sub	x0, x29, #64
+	stur	x8, [x29, #-64]
+	bl	__ZNKSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEE6failedB8ne200100Ev
+	tbz	w0, #0, LBB15_17
+	b	LBB15_10
+LBB15_10:
+	ldur	x8, [x29, #-8]
+	ldr	x9, [x8]
+	ldur	x9, [x9, #-24]
+	add	x0, x8, x9
+Ltmp32:
+	mov	w1, #5                          ; =0x5
+	bl	__ZNSt3__19basic_iosIcNS_11char_traitsIcEEE8setstateB8ne200100Ej
+Ltmp33:
+	b	LBB15_11
+LBB15_11:
+	b	LBB15_17
+LBB15_12:
+Ltmp23:
+	stur	x0, [x29, #-48]
+	mov	x8, x1
+	stur	w8, [x29, #-52]
+	b	LBB15_14
+LBB15_13:
+Ltmp34:
+	stur	x0, [x29, #-48]
+	mov	x8, x1
+	stur	w8, [x29, #-52]
+	sub	x0, x29, #40
+	bl	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev
+	b	LBB15_14
+LBB15_14:
+	ldur	x0, [x29, #-48]
+	bl	___cxa_begin_catch
+	ldur	x8, [x29, #-8]
+	ldr	x9, [x8]
+	ldur	x9, [x9, #-24]
+	add	x0, x8, x9
+Ltmp35:
+	bl	__ZNSt3__18ios_base33__set_badbit_and_consider_rethrowEv
+Ltmp36:
+	b	LBB15_15
+LBB15_15:
+	bl	___cxa_end_catch
+	b	LBB15_16
+LBB15_16:
+	ldur	x0, [x29, #-8]
+	ldp	x29, x30, [sp, #144]            ; 16-byte Folded Reload
+	add	sp, sp, #160
+	ret
+LBB15_17:
+	b	LBB15_18
+LBB15_18:
+	sub	x0, x29, #40
+	bl	__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev
+	b	LBB15_16
+LBB15_19:
+Ltmp37:
+	stur	x0, [x29, #-48]
+	mov	x8, x1
+	stur	w8, [x29, #-52]
+Ltmp38:
+	bl	___cxa_end_catch
+Ltmp39:
+	b	LBB15_20
+LBB15_20:
+	b	LBB15_21
+LBB15_21:
+	ldur	x0, [x29, #-48]
+	bl	__Unwind_Resume
+LBB15_22:
+Ltmp40:
+	bl	___clang_call_terminate
+Lfunc_end1:
+	.cfi_endproc
+	.section	__TEXT,__gcc_except_tab
+	.p2align	2, 0x0
+GCC_except_table15:
+Lexception1:
+	.byte	255                             ; @LPStart Encoding = omit
+	.byte	155                             ; @TType Encoding = indirect pcrel sdata4
+	.uleb128 Lttbase0-Lttbaseref0
+Lttbaseref0:
+	.byte	1                               ; Call site Encoding = uleb128
+	.uleb128 Lcst_end1-Lcst_begin1
+Lcst_begin1:
+	.uleb128 Ltmp21-Lfunc_begin1            ; >> Call Site 1 <<
+	.uleb128 Ltmp22-Ltmp21                  ;   Call between Ltmp21 and Ltmp22
+	.uleb128 Ltmp23-Lfunc_begin1            ;     jumps to Ltmp23
+	.byte	1                               ;   On action: 1
+	.uleb128 Ltmp24-Lfunc_begin1            ; >> Call Site 2 <<
+	.uleb128 Ltmp33-Ltmp24                  ;   Call between Ltmp24 and Ltmp33
+	.uleb128 Ltmp34-Lfunc_begin1            ;     jumps to Ltmp34
+	.byte	1                               ;   On action: 1
+	.uleb128 Ltmp33-Lfunc_begin1            ; >> Call Site 3 <<
+	.uleb128 Ltmp35-Ltmp33                  ;   Call between Ltmp33 and Ltmp35
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp35-Lfunc_begin1            ; >> Call Site 4 <<
+	.uleb128 Ltmp36-Ltmp35                  ;   Call between Ltmp35 and Ltmp36
+	.uleb128 Ltmp37-Lfunc_begin1            ;     jumps to Ltmp37
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp36-Lfunc_begin1            ; >> Call Site 5 <<
+	.uleb128 Ltmp38-Ltmp36                  ;   Call between Ltmp36 and Ltmp38
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp38-Lfunc_begin1            ; >> Call Site 6 <<
+	.uleb128 Ltmp39-Ltmp38                  ;   Call between Ltmp38 and Ltmp39
+	.uleb128 Ltmp40-Lfunc_begin1            ;     jumps to Ltmp40
+	.byte	1                               ;   On action: 1
+	.uleb128 Ltmp39-Lfunc_begin1            ; >> Call Site 7 <<
+	.uleb128 Lfunc_end1-Ltmp39              ;   Call between Ltmp39 and Lfunc_end1
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+Lcst_end1:
+	.byte	1                               ; >> Action Record 1 <<
+                                        ;   Catch TypeInfo 1
+	.byte	0                               ;   No further actions
+	.p2align	2, 0x0
+                                        ; >> Catch TypeInfos <<
+	.long	0                               ; TypeInfo 1
+Lttbase0:
+	.p2align	2, 0x0
+                                        ; -- End function
+	.section	__TEXT,__text,regular,pure_instructions
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerB8ne200100Ev
+	bl	__ZNSt3__112__to_addressB8ne200100IKcEEPT_S3_
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4sizeB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4sizeB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4sizeB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4sizeB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4sizeB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4sizeB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	ldur	x0, [x29, #-8]
+	str	x0, [sp, #16]                   ; 8-byte Folded Spill
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev
+	tbz	w0, #0, LBB17_2
+	b	LBB17_1
+LBB17_1:
+	ldr	x0, [sp, #16]                   ; 8-byte Folded Reload
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE15__get_long_sizeB8ne200100Ev
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+	b	LBB17_3
+LBB17_2:
+	ldr	x0, [sp, #16]                   ; 8-byte Folded Reload
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne200100Ev
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+	b	LBB17_3
+LBB17_3:
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentrycvbB8ne200100Ev ; -- Begin function _ZNKSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentrycvbB8ne200100Ev
+	.globl	__ZNKSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentrycvbB8ne200100Ev
+	.weak_definition	__ZNKSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentrycvbB8ne200100Ev
+	.p2align	2
+__ZNKSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentrycvbB8ne200100Ev: ; @_ZNKSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentrycvbB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldrb	w8, [x8]
+	and	w0, w8, #0x1
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_ ; -- Begin function _ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
+	.globl	__ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
+	.weak_definition	__ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
+	.p2align	2
+__ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_: ; @_ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
+Lfunc_begin2:
+	.cfi_startproc
+	.cfi_personality 155, ___gxx_personality_v0
+	.cfi_lsda 16, Lexception2
+; %bb.0:
+	sub	sp, sp, #160
+	stp	x29, x30, [sp, #144]            ; 16-byte Folded Spill
+	add	x29, sp, #144
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-16]
+	stur	x1, [x29, #-24]
+	stur	x2, [x29, #-32]
+	stur	x3, [x29, #-40]
+	stur	x4, [x29, #-48]
+	sturb	w5, [x29, #-49]
+	ldur	x8, [x29, #-16]
+	cbnz	x8, LBB19_2
+	b	LBB19_1
+LBB19_1:
+	ldur	x8, [x29, #-16]
+	stur	x8, [x29, #-8]
+	b	LBB19_23
+LBB19_2:
+	ldur	x8, [x29, #-40]
+	ldur	x9, [x29, #-24]
+	subs	x8, x8, x9
+	stur	x8, [x29, #-64]
+	ldur	x0, [x29, #-48]
+	bl	__ZNKSt3__18ios_base5widthB8ne200100Ev
+	str	x0, [sp, #72]
+	ldr	x8, [sp, #72]
+	ldur	x9, [x29, #-64]
+	subs	x8, x8, x9
+	b.le	LBB19_4
+	b	LBB19_3
+LBB19_3:
+	ldur	x9, [x29, #-64]
+	ldr	x8, [sp, #72]
+	subs	x8, x8, x9
+	str	x8, [sp, #72]
+	b	LBB19_5
+LBB19_4:
+	str	xzr, [sp, #72]
+	b	LBB19_5
+LBB19_5:
+	ldur	x8, [x29, #-32]
+	ldur	x9, [x29, #-24]
+	subs	x8, x8, x9
+	str	x8, [sp, #64]
+	ldr	x8, [sp, #64]
+	subs	x8, x8, #0
+	b.le	LBB19_9
+	b	LBB19_6
+LBB19_6:
+	ldur	x0, [x29, #-16]
+	ldur	x1, [x29, #-24]
+	ldr	x2, [sp, #64]
+	bl	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl
+	ldr	x8, [sp, #64]
+	subs	x8, x0, x8
+	b.eq	LBB19_8
+	b	LBB19_7
+LBB19_7:
+                                        ; kill: def $x8 killed $xzr
+	stur	xzr, [x29, #-16]
+	ldur	x8, [x29, #-16]
+	stur	x8, [x29, #-8]
+	b	LBB19_23
+LBB19_8:
+	b	LBB19_9
+LBB19_9:
+	ldr	x8, [sp, #72]
+	subs	x8, x8, #0
+	b.le	LBB19_18
+	b	LBB19_10
+LBB19_10:
+	ldr	x1, [sp, #72]
+	ldursb	w2, [x29, #-49]
+	add	x0, sp, #40
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Emc
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldur	x8, [x29, #-16]
+	str	x8, [sp, #8]                    ; 8-byte Folded Spill
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4dataB8ne200100Ev
+	mov	x1, x0
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+	ldr	x2, [sp, #72]
+Ltmp42:
+	bl	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl
+	str	x0, [sp, #16]                   ; 8-byte Folded Spill
+Ltmp43:
+	b	LBB19_11
+LBB19_11:
+	ldr	x8, [sp, #16]                   ; 8-byte Folded Reload
+	ldr	x9, [sp, #72]
+	subs	x8, x8, x9
+	b.eq	LBB19_14
+	b	LBB19_12
+LBB19_12:
+                                        ; kill: def $x8 killed $xzr
+	stur	xzr, [x29, #-16]
+	ldur	x8, [x29, #-16]
+	stur	x8, [x29, #-8]
+	mov	w8, #1                          ; =0x1
+	str	w8, [sp, #24]
+	b	LBB19_15
+LBB19_13:
+Ltmp44:
+	str	x0, [sp, #32]
+	mov	x8, x1
+	str	w8, [sp, #28]
+	add	x0, sp, #40
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+	b	LBB19_24
+LBB19_14:
+	str	wzr, [sp, #24]
+	b	LBB19_15
+LBB19_15:
+	add	x0, sp, #40
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED1Ev
+	ldr	w8, [sp, #24]
+	cbz	w8, LBB19_17
+	b	LBB19_16
+LBB19_16:
+	b	LBB19_23
+LBB19_17:
+	b	LBB19_18
+LBB19_18:
+	ldur	x8, [x29, #-40]
+	ldur	x9, [x29, #-32]
+	subs	x8, x8, x9
+	str	x8, [sp, #64]
+	ldr	x8, [sp, #64]
+	subs	x8, x8, #0
+	b.le	LBB19_22
+	b	LBB19_19
+LBB19_19:
+	ldur	x0, [x29, #-16]
+	ldur	x1, [x29, #-32]
+	ldr	x2, [sp, #64]
+	bl	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl
+	ldr	x8, [sp, #64]
+	subs	x8, x0, x8
+	b.eq	LBB19_21
+	b	LBB19_20
+LBB19_20:
+                                        ; kill: def $x8 killed $xzr
+	stur	xzr, [x29, #-16]
+	ldur	x8, [x29, #-16]
+	stur	x8, [x29, #-8]
+	b	LBB19_23
+LBB19_21:
+	b	LBB19_22
+LBB19_22:
+	ldur	x0, [x29, #-48]
+	mov	x1, #0                          ; =0x0
+	bl	__ZNSt3__18ios_base5widthB8ne200100El
+	ldur	x8, [x29, #-16]
+	stur	x8, [x29, #-8]
+	b	LBB19_23
+LBB19_23:
+	ldur	x0, [x29, #-8]
+	ldp	x29, x30, [sp, #144]            ; 16-byte Folded Reload
+	add	sp, sp, #160
+	ret
+LBB19_24:
+	ldr	x0, [sp, #32]
+	bl	__Unwind_Resume
+; %bb.25:
+Lfunc_end2:
+	.cfi_endproc
+	.section	__TEXT,__gcc_except_tab
+	.p2align	2, 0x0
+GCC_except_table19:
+Lexception2:
+	.byte	255                             ; @LPStart Encoding = omit
+	.byte	255                             ; @TType Encoding = omit
+	.byte	1                               ; Call site Encoding = uleb128
+	.uleb128 Lcst_end2-Lcst_begin2
+Lcst_begin2:
+	.uleb128 Lfunc_begin2-Lfunc_begin2      ; >> Call Site 1 <<
+	.uleb128 Ltmp42-Lfunc_begin2            ;   Call between Lfunc_begin2 and Ltmp42
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp42-Lfunc_begin2            ; >> Call Site 2 <<
+	.uleb128 Ltmp43-Ltmp42                  ;   Call between Ltmp42 and Ltmp43
+	.uleb128 Ltmp44-Lfunc_begin2            ;     jumps to Ltmp44
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp43-Lfunc_begin2            ; >> Call Site 3 <<
+	.uleb128 Lfunc_end2-Ltmp43              ;   Call between Ltmp43 and Lfunc_end2
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+Lcst_end2:
+	.p2align	2, 0x0
+                                        ; -- End function
+	.section	__TEXT,__text,regular,pure_instructions
+	.private_extern	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC1B8ne200100ERNS_13basic_ostreamIcS2_EE ; -- Begin function _ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC1B8ne200100ERNS_13basic_ostreamIcS2_EE
+	.globl	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC1B8ne200100ERNS_13basic_ostreamIcS2_EE
+	.weak_def_can_be_hidden	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC1B8ne200100ERNS_13basic_ostreamIcS2_EE
+	.p2align	2
+__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC1B8ne200100ERNS_13basic_ostreamIcS2_EE: ; @_ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC1B8ne200100ERNS_13basic_ostreamIcS2_EE
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	str	x1, [sp, #16]
+	ldur	x0, [x29, #-8]
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+	ldr	x1, [sp, #16]
+	bl	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC2B8ne200100ERNS_13basic_ostreamIcS2_EE
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__18ios_base5flagsB8ne200100Ev ; -- Begin function _ZNKSt3__18ios_base5flagsB8ne200100Ev
+	.globl	__ZNKSt3__18ios_base5flagsB8ne200100Ev
+	.weak_definition	__ZNKSt3__18ios_base5flagsB8ne200100Ev
+	.p2align	2
+__ZNKSt3__18ios_base5flagsB8ne200100Ev: ; @_ZNKSt3__18ios_base5flagsB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	w0, [x8, #8]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE4fillB8ne200100Ev ; -- Begin function _ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE4fillB8ne200100Ev
+	.globl	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE4fillB8ne200100Ev
+	.weak_definition	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE4fillB8ne200100Ev
+	.p2align	2
+__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE4fillB8ne200100Ev: ; @_ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE4fillB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	str	x8, [sp]                        ; 8-byte Folded Spill
+	add	x0, x8, #144
+	bl	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE8__is_setB8ne200100Ev
+	tbnz	w0, #0, LBB22_2
+	b	LBB22_1
+LBB22_1:
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	mov	w1, #32                         ; =0x20
+	bl	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne200100Ec
+	ldr	x8, [sp]                        ; 8-byte Folded Reload
+	mov	x1, x0
+	add	x0, x8, #144
+	bl	__ZNSt3__118_SentinelValueFillINS_11char_traitsIcEEEaSB8ne200100Ei
+	b	LBB22_2
+LBB22_2:
+	ldr	x8, [sp]                        ; 8-byte Folded Reload
+	add	x0, x8, #144
+	bl	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE5__getB8ne200100Ev
+	sxtb	w0, w0
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEE6failedB8ne200100Ev ; -- Begin function _ZNKSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEE6failedB8ne200100Ev
+	.globl	__ZNKSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEE6failedB8ne200100Ev
+	.weak_definition	__ZNKSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEE6failedB8ne200100Ev
+	.p2align	2
+__ZNKSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEE6failedB8ne200100Ev: ; @_ZNKSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEE6failedB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	x8, [x8]
+	subs	x8, x8, #0
+	cset	w0, eq
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__19basic_iosIcNS_11char_traitsIcEEE8setstateB8ne200100Ej ; -- Begin function _ZNSt3__19basic_iosIcNS_11char_traitsIcEEE8setstateB8ne200100Ej
+	.globl	__ZNSt3__19basic_iosIcNS_11char_traitsIcEEE8setstateB8ne200100Ej
+	.weak_definition	__ZNSt3__19basic_iosIcNS_11char_traitsIcEEE8setstateB8ne200100Ej
+	.p2align	2
+__ZNSt3__19basic_iosIcNS_11char_traitsIcEEE8setstateB8ne200100Ej: ; @_ZNSt3__19basic_iosIcNS_11char_traitsIcEEE8setstateB8ne200100Ej
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	str	w1, [sp, #4]
+	ldr	x0, [sp, #8]
+	ldr	w1, [sp, #4]
+	bl	__ZNSt3__18ios_base8setstateB8ne200100Ej
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	___clang_call_terminate ; -- Begin function __clang_call_terminate
+	.globl	___clang_call_terminate
+	.weak_definition	___clang_call_terminate
+	.p2align	2
+___clang_call_terminate:                ; @__clang_call_terminate
+	.cfi_startproc
+; %bb.0:
+	stp	x29, x30, [sp, #-16]!           ; 16-byte Folded Spill
+	mov	x29, sp
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	bl	___cxa_begin_catch
+	bl	__ZSt9terminatev
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__18ios_base5widthB8ne200100Ev ; -- Begin function _ZNKSt3__18ios_base5widthB8ne200100Ev
+	.globl	__ZNKSt3__18ios_base5widthB8ne200100Ev
+	.weak_definition	__ZNKSt3__18ios_base5widthB8ne200100Ev
+	.p2align	2
+__ZNKSt3__18ios_base5widthB8ne200100Ev: ; @_ZNKSt3__18ios_base5widthB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	x0, [x8, #24]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl ; -- Begin function _ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl
+	.globl	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl
+	.weak_definition	__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl
+	.p2align	2
+__ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl: ; @_ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5sputnB8ne200100EPKcl
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	str	x1, [sp, #16]
+	str	x2, [sp, #8]
+	ldur	x0, [x29, #-8]
+	ldr	x1, [sp, #16]
+	ldr	x2, [sp, #8]
+	ldr	x8, [x0]
+	ldr	x8, [x8, #96]
+	blr	x8
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Emc ; -- Begin function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Emc
+	.globl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Emc
+	.weak_def_can_be_hidden	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Emc
+	.p2align	2
+__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Emc: ; @_ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne200100Emc
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	str	x1, [sp, #16]
+	strb	w2, [sp, #15]
+	ldur	x0, [x29, #-8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	ldr	x1, [sp, #16]
+	ldrsb	w2, [sp, #15]
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__18ios_base5widthB8ne200100El ; -- Begin function _ZNSt3__18ios_base5widthB8ne200100El
+	.globl	__ZNSt3__18ios_base5widthB8ne200100El
+	.weak_definition	__ZNSt3__18ios_base5widthB8ne200100El
+	.p2align	2
+__ZNSt3__18ios_base5widthB8ne200100El:  ; @_ZNSt3__18ios_base5widthB8ne200100El
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	.cfi_def_cfa_offset 32
+	str	x0, [sp, #24]
+	str	x1, [sp, #16]
+	ldr	x9, [sp, #24]
+	ldr	x8, [x9, #24]
+	str	x8, [sp, #8]
+	ldr	x8, [sp, #16]
+	str	x8, [x9, #24]
+	ldr	x0, [sp, #8]
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc ; -- Begin function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc
+	.globl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc
+	.weak_def_can_be_hidden	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc
+	.p2align	2
+__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc: ; @_ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	str	x1, [sp, #16]
+	strb	w2, [sp, #15]
+	ldur	x0, [x29, #-8]
+	str	x0, [sp]                        ; 8-byte Folded Spill
+	bl	__ZNSt3__19allocatorIcEC1B8ne200100Ev
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldr	x1, [sp, #16]
+	ldrsb	w2, [sp, #15]
+	bl	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6__initEmc
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC2B8ne200100ERNS_13basic_ostreamIcS2_EE ; -- Begin function _ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC2B8ne200100ERNS_13basic_ostreamIcS2_EE
+	.globl	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC2B8ne200100ERNS_13basic_ostreamIcS2_EE
+	.weak_def_can_be_hidden	__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC2B8ne200100ERNS_13basic_ostreamIcS2_EE
+	.p2align	2
+__ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC2B8ne200100ERNS_13basic_ostreamIcS2_EE: ; @_ZNSt3__119ostreambuf_iteratorIcNS_11char_traitsIcEEEC2B8ne200100ERNS_13basic_ostreamIcS2_EE
+Lfunc_begin3:
+	.cfi_startproc
+	.cfi_personality 155, ___gxx_personality_v0
+	.cfi_lsda 16, Lexception3
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	str	x1, [sp, #16]
+	ldur	x8, [x29, #-8]
+	str	x8, [sp]                        ; 8-byte Folded Spill
+	ldr	x8, [sp, #16]
+	ldr	x9, [x8]
+	ldur	x9, [x9, #-24]
+Ltmp49:
+	add	x0, x8, x9
+	bl	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5rdbufB8ne200100Ev
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+Ltmp50:
+	b	LBB31_1
+LBB31_1:
+	ldr	x0, [sp]                        ; 8-byte Folded Reload
+	ldr	x8, [sp, #8]                    ; 8-byte Folded Reload
+	str	x8, [x0]
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+LBB31_2:
+Ltmp51:
+	bl	___clang_call_terminate
+Lfunc_end3:
+	.cfi_endproc
+	.section	__TEXT,__gcc_except_tab
+	.p2align	2, 0x0
+GCC_except_table31:
+Lexception3:
+	.byte	255                             ; @LPStart Encoding = omit
+	.byte	155                             ; @TType Encoding = indirect pcrel sdata4
+	.uleb128 Lttbase1-Lttbaseref1
+Lttbaseref1:
+	.byte	1                               ; Call site Encoding = uleb128
+	.uleb128 Lcst_end3-Lcst_begin3
+Lcst_begin3:
+	.uleb128 Ltmp49-Lfunc_begin3            ; >> Call Site 1 <<
+	.uleb128 Ltmp50-Ltmp49                  ;   Call between Ltmp49 and Ltmp50
+	.uleb128 Ltmp51-Lfunc_begin3            ;     jumps to Ltmp51
+	.byte	1                               ;   On action: 1
+Lcst_end3:
+	.byte	1                               ; >> Action Record 1 <<
+                                        ;   Catch TypeInfo 1
+	.byte	0                               ;   No further actions
+	.p2align	2, 0x0
+                                        ; >> Catch TypeInfos <<
+	.long	0                               ; TypeInfo 1
+Lttbase1:
+	.p2align	2, 0x0
+                                        ; -- End function
+	.section	__TEXT,__text,regular,pure_instructions
+	.private_extern	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5rdbufB8ne200100Ev ; -- Begin function _ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5rdbufB8ne200100Ev
+	.globl	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5rdbufB8ne200100Ev
+	.weak_definition	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5rdbufB8ne200100Ev
+	.p2align	2
+__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5rdbufB8ne200100Ev: ; @_ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5rdbufB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	bl	__ZNKSt3__18ios_base5rdbufB8ne200100Ev
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__18ios_base5rdbufB8ne200100Ev ; -- Begin function _ZNKSt3__18ios_base5rdbufB8ne200100Ev
+	.globl	__ZNKSt3__18ios_base5rdbufB8ne200100Ev
+	.weak_definition	__ZNKSt3__18ios_base5rdbufB8ne200100Ev
+	.p2align	2
+__ZNKSt3__18ios_base5rdbufB8ne200100Ev: ; @_ZNKSt3__18ios_base5rdbufB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	x0, [x8, #40]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE8__is_setB8ne200100Ev ; -- Begin function _ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE8__is_setB8ne200100Ev
+	.globl	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE8__is_setB8ne200100Ev
+	.weak_definition	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE8__is_setB8ne200100Ev
+	.p2align	2
+__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE8__is_setB8ne200100Ev: ; @_ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE8__is_setB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	w8, [x8]
+	str	w8, [sp, #4]                    ; 4-byte Folded Spill
+	bl	__ZNSt3__111char_traitsIcE3eofB8ne200100Ev
+	ldr	w8, [sp, #4]                    ; 4-byte Folded Reload
+	subs	w8, w8, w0
+	cset	w0, ne
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne200100Ec ; -- Begin function _ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne200100Ec
+	.globl	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne200100Ec
+	.weak_definition	__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne200100Ec
+	.p2align	2
+__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne200100Ec: ; @_ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ne200100Ec
+Lfunc_begin4:
+	.cfi_startproc
+	.cfi_personality 155, ___gxx_personality_v0
+	.cfi_lsda 16, Lexception4
+; %bb.0:
+	sub	sp, sp, #80
+	stp	x29, x30, [sp, #64]             ; 16-byte Folded Spill
+	add	x29, sp, #64
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	sturb	w1, [x29, #-9]
+	ldur	x0, [x29, #-8]
+	sub	x8, x29, #24
+	str	x8, [sp, #8]                    ; 8-byte Folded Spill
+	bl	__ZNKSt3__18ios_base6getlocEv
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+Ltmp53:
+	bl	__ZNSt3__19use_facetB8ne200100INS_5ctypeIcEEEERKT_RKNS_6localeE
+	str	x0, [sp, #16]                   ; 8-byte Folded Spill
+Ltmp54:
+	b	LBB35_1
+LBB35_1:
+	ldr	x0, [sp, #16]                   ; 8-byte Folded Reload
+	ldursb	w1, [x29, #-9]
+Ltmp55:
+	bl	__ZNKSt3__15ctypeIcE5widenB8ne200100Ec
+	str	w0, [sp, #4]                    ; 4-byte Folded Spill
+Ltmp56:
+	b	LBB35_2
+LBB35_2:
+	sub	x0, x29, #24
+	bl	__ZNSt3__16localeD1Ev
+	ldr	w0, [sp, #4]                    ; 4-byte Folded Reload
+	ldp	x29, x30, [sp, #64]             ; 16-byte Folded Reload
+	add	sp, sp, #80
+	ret
+LBB35_3:
+Ltmp57:
+	str	x0, [sp, #32]
+	mov	x8, x1
+	str	w8, [sp, #28]
+	sub	x0, x29, #24
+	bl	__ZNSt3__16localeD1Ev
+	b	LBB35_4
+LBB35_4:
+	ldr	x0, [sp, #32]
+	bl	__Unwind_Resume
+Lfunc_end4:
+	.cfi_endproc
+	.section	__TEXT,__gcc_except_tab
+	.p2align	2, 0x0
+GCC_except_table35:
+Lexception4:
+	.byte	255                             ; @LPStart Encoding = omit
+	.byte	255                             ; @TType Encoding = omit
+	.byte	1                               ; Call site Encoding = uleb128
+	.uleb128 Lcst_end4-Lcst_begin4
+Lcst_begin4:
+	.uleb128 Lfunc_begin4-Lfunc_begin4      ; >> Call Site 1 <<
+	.uleb128 Ltmp53-Lfunc_begin4            ;   Call between Lfunc_begin4 and Ltmp53
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp53-Lfunc_begin4            ; >> Call Site 2 <<
+	.uleb128 Ltmp56-Ltmp53                  ;   Call between Ltmp53 and Ltmp56
+	.uleb128 Ltmp57-Lfunc_begin4            ;     jumps to Ltmp57
+	.byte	0                               ;   On action: cleanup
+	.uleb128 Ltmp56-Lfunc_begin4            ; >> Call Site 3 <<
+	.uleb128 Lfunc_end4-Ltmp56              ;   Call between Ltmp56 and Lfunc_end4
+	.byte	0                               ;     has no landing pad
+	.byte	0                               ;   On action: cleanup
+Lcst_end4:
+	.p2align	2, 0x0
+                                        ; -- End function
+	.section	__TEXT,__text,regular,pure_instructions
+	.private_extern	__ZNSt3__118_SentinelValueFillINS_11char_traitsIcEEEaSB8ne200100Ei ; -- Begin function _ZNSt3__118_SentinelValueFillINS_11char_traitsIcEEEaSB8ne200100Ei
+	.globl	__ZNSt3__118_SentinelValueFillINS_11char_traitsIcEEEaSB8ne200100Ei
+	.weak_definition	__ZNSt3__118_SentinelValueFillINS_11char_traitsIcEEEaSB8ne200100Ei
+	.p2align	2
+__ZNSt3__118_SentinelValueFillINS_11char_traitsIcEEEaSB8ne200100Ei: ; @_ZNSt3__118_SentinelValueFillINS_11char_traitsIcEEEaSB8ne200100Ei
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	str	w1, [sp, #4]
+	ldr	x0, [sp, #8]
+	ldr	w8, [sp, #4]
+	str	w8, [x0]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE5__getB8ne200100Ev ; -- Begin function _ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE5__getB8ne200100Ev
+	.globl	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE5__getB8ne200100Ev
+	.weak_definition	__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE5__getB8ne200100Ev
+	.p2align	2
+__ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE5__getB8ne200100Ev: ; @_ZNKSt3__118_SentinelValueFillINS_11char_traitsIcEEE5__getB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	w0, [x8]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__111char_traitsIcE3eofB8ne200100Ev ; -- Begin function _ZNSt3__111char_traitsIcE3eofB8ne200100Ev
+	.globl	__ZNSt3__111char_traitsIcE3eofB8ne200100Ev
+	.weak_definition	__ZNSt3__111char_traitsIcE3eofB8ne200100Ev
+	.p2align	2
+__ZNSt3__111char_traitsIcE3eofB8ne200100Ev: ; @_ZNSt3__111char_traitsIcE3eofB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	mov	w0, #-1                         ; =0xffffffff
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__19use_facetB8ne200100INS_5ctypeIcEEEERKT_RKNS_6localeE ; -- Begin function _ZNSt3__19use_facetB8ne200100INS_5ctypeIcEEEERKT_RKNS_6localeE
+	.globl	__ZNSt3__19use_facetB8ne200100INS_5ctypeIcEEEERKT_RKNS_6localeE
+	.weak_definition	__ZNSt3__19use_facetB8ne200100INS_5ctypeIcEEEERKT_RKNS_6localeE
+	.p2align	2
+__ZNSt3__19use_facetB8ne200100INS_5ctypeIcEEEERKT_RKNS_6localeE: ; @_ZNSt3__19use_facetB8ne200100INS_5ctypeIcEEEERKT_RKNS_6localeE
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	adrp	x1, __ZNSt3__15ctypeIcE2idE@GOTPAGE
+	ldr	x1, [x1, __ZNSt3__15ctypeIcE2idE@GOTPAGEOFF]
+	bl	__ZNKSt3__16locale9use_facetERNS0_2idE
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__15ctypeIcE5widenB8ne200100Ec ; -- Begin function _ZNKSt3__15ctypeIcE5widenB8ne200100Ec
+	.globl	__ZNKSt3__15ctypeIcE5widenB8ne200100Ec
+	.weak_definition	__ZNKSt3__15ctypeIcE5widenB8ne200100Ec
+	.p2align	2
+__ZNKSt3__15ctypeIcE5widenB8ne200100Ec: ; @_ZNKSt3__15ctypeIcE5widenB8ne200100Ec
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	strb	w1, [sp, #7]
+	ldr	x0, [sp, #8]
+	ldrsb	w1, [sp, #7]
+	ldr	x8, [x0]
+	ldr	x8, [x8, #56]
+	blr	x8
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__18ios_base8setstateB8ne200100Ej ; -- Begin function _ZNSt3__18ios_base8setstateB8ne200100Ej
+	.globl	__ZNSt3__18ios_base8setstateB8ne200100Ej
+	.weak_definition	__ZNSt3__18ios_base8setstateB8ne200100Ej
+	.p2align	2
+__ZNSt3__18ios_base8setstateB8ne200100Ej: ; @_ZNSt3__18ios_base8setstateB8ne200100Ej
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	str	w1, [sp, #4]
+	ldr	x0, [sp, #8]
+	ldr	w8, [x0, #32]
+	ldr	w9, [sp, #4]
+	orr	w1, w8, w9
+	bl	__ZNSt3__18ios_base5clearEj
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__112__to_addressB8ne200100IKcEEPT_S3_ ; -- Begin function _ZNSt3__112__to_addressB8ne200100IKcEEPT_S3_
+	.globl	__ZNSt3__112__to_addressB8ne200100IKcEEPT_S3_
+	.weak_definition	__ZNSt3__112__to_addressB8ne200100IKcEEPT_S3_
+	.p2align	2
+__ZNSt3__112__to_addressB8ne200100IKcEEPT_S3_: ; @_ZNSt3__112__to_addressB8ne200100IKcEEPT_S3_
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__get_pointerB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #48
+	stp	x29, x30, [sp, #32]             ; 16-byte Folded Spill
+	add	x29, sp, #32
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	stur	x0, [x29, #-8]
+	ldur	x0, [x29, #-8]
+	str	x0, [sp, #16]                   ; 8-byte Folded Spill
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev
+	tbz	w0, #0, LBB43_2
+	b	LBB43_1
+LBB43_1:
+	ldr	x0, [sp, #16]                   ; 8-byte Folded Reload
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerB8ne200100Ev
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+	b	LBB43_3
+LBB43_2:
+	ldr	x0, [sp, #16]                   ; 8-byte Folded Reload
+	bl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerB8ne200100Ev
+	str	x0, [sp, #8]                    ; 8-byte Folded Spill
+	b	LBB43_3
+LBB43_3:
+	ldr	x0, [sp, #8]                    ; 8-byte Folded Reload
+	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
+	add	sp, sp, #48
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9__is_longB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldrb	w8, [x8, #23]
+	lsr	w8, w8, #7
+	subs	w8, w8, #0
+	cset	w0, ne
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE18__get_long_pointerB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	x0, [x8]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE19__get_short_pointerB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	bl	__ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne200100ERS1_
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne200100ERS1_ ; -- Begin function _ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne200100ERS1_
+	.globl	__ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne200100ERS1_
+	.weak_definition	__ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne200100ERS1_
+	.p2align	2
+__ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne200100ERS1_: ; @_ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne200100ERS1_
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE15__get_long_sizeB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE15__get_long_sizeB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE15__get_long_sizeB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE15__get_long_sizeB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE15__get_long_sizeB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE15__get_long_sizeB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldr	x0, [x8, #8]
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne200100Ev ; -- Begin function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne200100Ev
+	.globl	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne200100Ev
+	.weak_definition	__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne200100Ev
+	.p2align	2
+__ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne200100Ev: ; @_ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne200100Ev
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	x0, [sp, #8]
+	ldr	x8, [sp, #8]
+	ldrb	w8, [x8, #23]
+	and	w9, w8, #0x7f
+                                        ; implicit-def: $x8
+	mov	x8, x9
+	and	x0, x8, #0xff
+	add	sp, sp, #16
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__111char_traitsIcE6lengthB8ne200100EPKc ; -- Begin function _ZNSt3__111char_traitsIcE6lengthB8ne200100EPKc
+	.globl	__ZNSt3__111char_traitsIcE6lengthB8ne200100EPKc
+	.weak_definition	__ZNSt3__111char_traitsIcE6lengthB8ne200100EPKc
+	.p2align	2
+__ZNSt3__111char_traitsIcE6lengthB8ne200100EPKc: ; @_ZNSt3__111char_traitsIcE6lengthB8ne200100EPKc
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	bl	__ZNSt3__118__constexpr_strlenB8ne200100IcEEmPKT_
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.private_extern	__ZNSt3__118__constexpr_strlenB8ne200100IcEEmPKT_ ; -- Begin function _ZNSt3__118__constexpr_strlenB8ne200100IcEEmPKT_
+	.globl	__ZNSt3__118__constexpr_strlenB8ne200100IcEEmPKT_
+	.weak_definition	__ZNSt3__118__constexpr_strlenB8ne200100IcEEmPKT_
+	.p2align	2
+__ZNSt3__118__constexpr_strlenB8ne200100IcEEmPKT_: ; @_ZNSt3__118__constexpr_strlenB8ne200100IcEEmPKT_
+	.cfi_startproc
+; %bb.0:
+	sub	sp, sp, #32
+	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
+	add	x29, sp, #16
+	.cfi_def_cfa w29, 16
+	.cfi_offset w30, -8
+	.cfi_offset w29, -16
+	str	x0, [sp, #8]
+	ldr	x0, [sp, #8]
+	bl	_strlen
+	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
+	add	sp, sp, #32
+	ret
+	.cfi_endproc
+                                        ; -- End function
+	.section	__TEXT,__cstring,cstring_literals
+l_.str:                                 ; @.str
+	.asciz	"a"
+
+l_.str.1:                               ; @.str.1
+	.asciz	"b"
+
+l_.str.2:                               ; @.str.2
+	.asciz	"c"
+
+l_.str.3:                               ; @.str.3
+	.asciz	" "
+
+.subsections_via_symbols

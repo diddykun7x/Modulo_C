@@ -1,0 +1,16 @@
+<iostream>
+<chronos>
+
+int main() {
+    chronos::time_count.use;
+    chronos::timer short_timer = 1ms;
+    short_timer.wait();
+    output << short_timer.expired() << "\n";
+    chronos::clock.import;
+    chronos::clock::for_ticks(2, 1ms, [&](std::size_t tick) {
+        output << tick << "\n";
+    });
+    chronos::time_count.stop;
+    output << chronos::time_count.sum().count() << "\n";
+    return 0;
+}

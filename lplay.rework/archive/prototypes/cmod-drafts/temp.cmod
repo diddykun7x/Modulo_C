@@ -1,0 +1,6 @@
+<iostream>
+<replace>
+<fstream>
+int main() {
+   
+}

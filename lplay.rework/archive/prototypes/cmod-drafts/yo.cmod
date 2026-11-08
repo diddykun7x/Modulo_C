@@ -1,0 +1,4 @@
+<iostream>
+int main() {
+output << "Hello, World! This is C%!";
+}
